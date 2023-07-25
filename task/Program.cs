@@ -6,7 +6,7 @@
     return arrSize;
 }
 
-string[] FillArray(int arrSize)
+string[] FillArray(int arrSize) // Консоль не отображает кириллицу
 {
     string[] arr = new string[arrSize];
 
@@ -45,4 +45,6 @@ for(int i = 0; i < countItems; i++)
 
 PrintArr(arr);
 System.Console.WriteLine();
+
+Array.Resize(ref newArr, newArrIndex);
 PrintArr(newArr);
