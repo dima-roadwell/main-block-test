@@ -1,6 +1,6 @@
 ﻿int SetArraySize()
 {
-    System.Console.Write("Введите длину массива:");
+    System.Console.Write("Введите длину массива: ");
     int arrSize = Convert.ToInt32(Console.ReadLine());
 
     return arrSize;
@@ -12,6 +12,7 @@ string[] FillArray(int arrSize)
 
     for(int i = 0; i < arrSize; i++)
     {
+        System.Console.Write($"Введите элемент '{i}': ");
         string arrValue = Console.ReadLine();
         arr[i] = arrValue;
     }
