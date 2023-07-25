@@ -19,6 +19,14 @@ string[] FillArray(int arrSize)
     return arr;
 }
 
+void PrintArr(string[] arr)
+{
+    for(int i = 0; i < arr.Length; i++)
+    {
+        System.Console.Write($"{arr[i]}; ");
+    }
+}
+
 int countItems = SetArraySize();
 string[] arr = FillArray(countItems);
 
@@ -33,3 +41,7 @@ for(int i = 0; i < countItems; i++)
         newArrIndex++;
     }
 }
+
+PrintArr(arr);
+System.Console.WriteLine();
+PrintArr(newArr);
