@@ -21,3 +21,15 @@ string[] FillArray(int arrSize)
 
 int countItems = SetArraySize();
 string[] arr = FillArray(countItems);
+
+string[] newArr = new string[countItems];
+int newArrIndex = 0;
+
+for(int i = 0; i < countItems; i++)
+{
+    if(arr[i].Length <= 3)
+    {
+        newArr[newArrIndex] = arr[i];
+        newArrIndex++;
+    }
+}
